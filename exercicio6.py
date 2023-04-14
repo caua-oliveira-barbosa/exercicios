@@ -5,13 +5,13 @@ medias = []
 for i in range(1, 11):
     # solicitar as notas do aluno
     print(f"Informe as notas do aluno {i}:")
-    nota1 = float(input("Nota 1: "))
-    nota2 = float(input("Nota 2: "))
-    nota3 = float(input("Nota 3: "))
-    nota4 = float(input("Nota 4: "))
+    nota1 = str(input("Nota 1: "))
+    nota2 = str(input("Nota 2: "))
+    nota3 = str(input("Nota 3: "))
+    nota4 = str(input("Nota 4: "))
     
     # calcular a média do aluno e adicionar ao vetor de médias
-    media = (nota1 + nota2 + nota3 + nota4) / 4
+    media = sum(medias) / 4
     medias.append(media)
 
 # contar o número de alunos com média maior ou igual a 7.0
